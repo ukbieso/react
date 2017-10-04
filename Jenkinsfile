@@ -15,7 +15,6 @@ node {
 
             echo 'docker build stage'
        }
-
        stage('Deploy'){
 
          echo 'Push to Repo'
