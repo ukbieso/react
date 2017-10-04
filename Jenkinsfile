@@ -8,7 +8,7 @@ node {
          print "Environment will be : ${env.NODE_ENV}"
 
          sh 'node -v'
-         sh 'npm install' 
+         sh 'npm build' 
          sh 'npm start'
        }
        stage('Build Docker'){
