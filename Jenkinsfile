@@ -24,7 +24,7 @@ node('node') {
          
          echo 'ssh to web server and tell it to pull new image'
          
-
+         npm start
        }
 
        stage('Cleanup'){
