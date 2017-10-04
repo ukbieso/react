@@ -12,7 +12,6 @@ node('node') {
          sh 'npm test'
 
        }
-
        stage('Build Docker'){
 
             echo 'docker build stage'
@@ -30,6 +29,4 @@ node('node') {
        stage('Cleanup'){
        echo  'cleanup stage'
        }
-    }
-   
-}
+ }
