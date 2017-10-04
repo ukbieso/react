@@ -1,6 +1,4 @@
 node('node') {
-    currentBuild.result = "SUCCESS"
-    try {
        stage('Checkout'){
           checkout scm
        }
@@ -33,9 +31,5 @@ node('node') {
        echo  'cleanup stage'
        }
     }
-    catch (err) {
-        currentBuild.result = "FAILURE"
-        throw err
-    }
-
+   
 }
