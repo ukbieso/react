@@ -9,7 +9,8 @@ node {
 
          sh 'node -v'
          sh 'npm install' 
-         sh 'npm start'
+         sh 'npm build'
+              
        }
        stage('Build Docker'){
 
