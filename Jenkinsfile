@@ -21,8 +21,6 @@ node {
          echo 'Push to Repo'
          
          echo 'ssh to web server and tell it to pull new image'
-         
-        
        }
 
        stage('Cleanup'){
